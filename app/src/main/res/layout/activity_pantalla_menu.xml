@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF7C0"
+    tools:context=".PantallaMenu">
+
+    <ImageView
+        android:id="@+id/foto_perfil"
+        android:layout_width="172dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/depositphotos_202264598_stock_photo_smiling_handsome_driver_holding_steering" />
+
+        <TextView
+            android:id="@+id/nombre_driver"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:text="Felipe Damian Charcas Reyna"
+            android:textColor="@android:color/black"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintStart_toEndOf="@+id/foto_perfil"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/auto_driver"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Mitsibushi Lancer Evolution 2015"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toEndOf="@+id/foto_perfil"
+            app:layout_constraintTop_toBottomOf="@+id/nombre_driver" />
+
+    <TextView
+        android:id="@+id/tipo_auto"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Sedan"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@+id/foto_perfil"
+        app:layout_constraintTop_toBottomOf="@+id/auto_driver" />
+
+    <Button
+        android:id="@+id/boton_seleccionarviajes"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:background="#1A6CF1"
+        android:text="Seleccionar Viaje"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_diamante" />
+
+    <Button
+        android:id="@+id/botonMaps"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:background="#1A6CF1"
+        android:text="Gasolineras y Mecanicos"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_diamante" />
+
+    <Button
+        android:id="@+id/boton_historialviajes"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="187dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:background="#1A6CF1"
+        android:text="Historial de Viajes"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_diamante" />
+
+    <Button
+        android:id="@+id/botonCerrarSesion"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="267dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:background="#1A6CF1"
+        android:text="Cerrar Sesion"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_diamante" />
+
+    <TextView
+        android:id="@+id/diamantes"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:text="DIAMANTES:"
+        android:textColor="@android:color/black"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipo_auto" />
+
+    <ImageView
+        android:id="@+id/logo_viaje"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_diamante"
+        app:srcCompat="@drawable/volante" />
+
+    <ImageView
+        android:id="@+id/maps_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="107dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_diamante"
+        app:srcCompat="@drawable/mpslogo" />
+
+    <ImageView
+        android:id="@+id/logo_historial"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="187dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_diamante"
+        app:srcCompat="@drawable/listado" />
+
+    <ImageView
+        android:id="@+id/logo_sesion"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="267dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_diamante"
+        app:srcCompat="@drawable/cerrar" />
+
+    <TextView
+        android:id="@+id/numero_diamantes"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text=" x 3.5"
+        android:textColor="@android:color/black"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toEndOf="@+id/logo_diamante"
+        app:layout_constraintTop_toBottomOf="@+id/diamantes" />
+
+    <ImageView
+        android:id="@+id/logo_diamante"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diamantes"
+        app:srcCompat="@drawable/diamante" />
+</androidx.constraintlayout.widget.ConstraintLayout>
