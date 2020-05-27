@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF7C0"
+    android:background="#FF0101"
     tools:context=".PantallaMenu">
 
     <ImageView
@@ -26,7 +26,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="50dp"
             android:text="Felipe Damian Charcas Reyna"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             app:autoSizeTextType="uniform"
             app:layout_constraintStart_toEndOf="@+id/foto_perfil"
             app:layout_constraintTop_toTopOf="parent" />
@@ -39,7 +39,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
             android:text="Mitsibushi Lancer Evolution 2015"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             app:layout_constraintStart_toEndOf="@+id/foto_perfil"
             app:layout_constraintTop_toBottomOf="@+id/nombre_driver" />
 
@@ -51,7 +51,7 @@
         android:layout_marginLeft="5dp"
         android:layout_marginTop="5dp"
         android:text="Sedan"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         app:layout_constraintStart_toEndOf="@+id/foto_perfil"
         app:layout_constraintTop_toBottomOf="@+id/auto_driver" />
 
@@ -113,7 +113,7 @@
         android:layout_height="30dp"
         android:layout_marginTop="50dp"
         android:text="DIAMANTES:"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -171,7 +171,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
         android:text=" x 3.5"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         app:autoSizeTextType="uniform"
         app:layout_constraintStart_toEndOf="@+id/logo_diamante"
         app:layout_constraintTop_toBottomOf="@+id/diamantes" />

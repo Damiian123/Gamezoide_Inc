@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF7C0"
+    android:background="#2E2E2E"
     tools:context=".PantallaHistorial">
 
     <TextView
@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="Pulse sobre los cuadros para ver detalles de los viajes."
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

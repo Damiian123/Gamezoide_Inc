@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF7C0"
+    android:background="#2E2E2E"
     tools:context=".PantallaViajes">
 
     <Button
@@ -78,7 +78,7 @@
         android:layout_marginLeft="36dp"
         android:layout_marginTop="60dp"
         android:text="-Toque un cuadro para aceptar un viaje."
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViajes" />
