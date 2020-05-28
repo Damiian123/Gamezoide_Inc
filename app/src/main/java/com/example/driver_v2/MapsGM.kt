@@ -10,11 +10,13 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 
-class MapsGM : AppCompatActivity(), OnMapReadyCallback {
+class MapsGM : AppCompatActivity(), OnMapReadyCallback
+{
 
     private lateinit var mMap: GoogleMap
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_maps_g_m)
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
