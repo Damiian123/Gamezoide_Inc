@@ -38,7 +38,8 @@ class MapsGM : AppCompatActivity(), OnMapReadyCallback {
 
         // Add a marker in Sydney and move the camera
         val slp = LatLng(22.1498203, -100.9791565)
-        mMap.addMarker(MarkerOptions().position(slp).title("Localizacion SLP"))
+        mMap.addMarker(MarkerOptions().position(slp).title("Trabajando en SLP"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(slp))
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(slp,14f))
     }
 }
