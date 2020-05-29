@@ -3,6 +3,7 @@ package com.example.driver_v2
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_pantalla_sesion.*
 
 class PantallaSesion : AppCompatActivity() {
@@ -16,6 +17,7 @@ class PantallaSesion : AppCompatActivity() {
         {
             val intentTerminar: Intent = Intent(this, MainActivity::class.java)
             startActivity(intentTerminar)
+            Toast.makeText(getApplicationContext(),"!Sesion Finalizada!", Toast.LENGTH_SHORT).show();
         }
 
         botonCancelar.setOnClickListener()
