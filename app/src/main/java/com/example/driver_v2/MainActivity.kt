@@ -15,30 +15,21 @@ class MainActivity : AppCompatActivity() {
 
         botonIngresar.setOnClickListener()
         {
-            if(Usuario.getText().toString().isEmpty())
+            if(Usuario.getText().toString().isEmpty() or Password.getText().toString().isEmpty())
             {
-                Toast.makeText(getApplicationContext(),"Debe ingresar el nombre del Usuario",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Favor de llenar los espacios solicitados",Toast.LENGTH_SHORT).show();
             }
-
-            if(Usuario.getText().toString() != "damian.charcas")
+            else
             {
-                Toast.makeText(getApplicationContext(),"Usuario No Existente",Toast.LENGTH_SHORT).show();
-            }
-
-            if(Password.getText().toString().isEmpty())
-            {
-                Toast.makeText(getApplicationContext(),"Debe ingresar contraseña del usuario",Toast.LENGTH_SHORT).show();
-            }
-
-            if(Password.getText().toString() != "12345")
-            {
-                Toast.makeText(getApplicationContext(),"Contraseña Incorrecta",Toast.LENGTH_SHORT).show();
-            }
-
-            if(Usuario.getText().toString() == "damian.charcas" && Password.getText().toString() == "12345")
-            {
-                val intent: Intent = Intent(this, PantallaMenu::class.java)
-                startActivity(intent)
+                if(Usuario.getText().toString() != "damian.charcas" && Password.getText().toString() != "12345")
+                {
+                    Toast.makeText(getApplicationContext(),"Hay un dato incorrecto o inexistente",Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+                    val intent: Intent = Intent(this, PantallaMenu::class.java)
+                    startActivity(intent)
+                }
             }
         }
     }

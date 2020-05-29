@@ -24,5 +24,17 @@ class PantallaViajes : AppCompatActivity()
             val intentViaje1: Intent = Intent(this, PantallaRuta1::class.java)
             startActivity(intentViaje1)
         }
+
+        botonViaje2.setOnClickListener()
+        {
+            val intentViaje2: Intent = Intent(this, PantallaRuta2::class.java)
+            startActivity(intentViaje2)
+        }
+
+        botonViaje3.setOnClickListener()
+        {
+            val intentViaje3: Intent = Intent(this, PantallaRuta3::class.java)
+            startActivity(intentViaje3)
+        }
     }
 }

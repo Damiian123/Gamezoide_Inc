@@ -11,21 +11,19 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
-public class Pantallamapa1 extends FragmentActivity implements OnMapReadyCallback {
+public class Pantallamapa3 extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     private Object GoogleMap;
-    private static final LatLng DALIAS=new LatLng(22.1235857, -100.9389847);
-    private static final LatLng SENDERO=new LatLng(22.1308141, -100.9267942);
+    private static final LatLng ALAMEDA=new LatLng(22.1558788, -100.9730761);
+    private static final LatLng DORADO=new LatLng(22.155778, -101.0045132);
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pantallamapa1);
+        setContentView(R.layout.activity_pantallamapa3);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -47,21 +45,21 @@ public class Pantallamapa1 extends FragmentActivity implements OnMapReadyCallbac
         mMap = googleMap;
 
         mMap.addPolyline(new PolylineOptions()
-        .add(DALIAS,SENDERO)
-        .width(8)
-        .color(Color.RED)
-        .geodesic(true));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(DALIAS,14));
+                .add(ALAMEDA,DORADO)
+                .width(8)
+                .color(Color.GREEN)
+                .geodesic(true));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ALAMEDA,14));
 
-        LatLng origen1 = new LatLng(22.1235857, -100.9389847);
-        mMap.addMarker(new MarkerOptions().position(origen1).title("Dalias, 1810"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(origen1));
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(origen1,11f));
+        // Add a marker in Sydney and move the camera
+        LatLng origen3 = new LatLng(22.1558788, -100.9730761);
+        mMap.addMarker(new MarkerOptions().position(origen3).title("Centro Alameda"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(origen3));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(origen3,11f));
 
-        LatLng destino1 = new LatLng(22.1308141, -100.9267942);
-        mMap.addMarker(new MarkerOptions().position(destino1).title("Plaza Sendero"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(destino1));
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(destino1,11f));
-
+        LatLng destino3 = new LatLng(22.155778, -101.0045132);
+        mMap.addMarker(new MarkerOptions().position(destino3).title("Plaza El Dorado"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(destino3));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(origen3,11f));
     }
 }

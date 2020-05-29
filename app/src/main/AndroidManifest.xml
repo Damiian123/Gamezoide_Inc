@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.driver_v2">
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality.
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -17,7 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".PantallaRuta3"></activity>
+        <activity android:name=".PantallaRuta2" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -31,8 +31,14 @@
             android:value="@string/google_maps_key" />
 
         <activity
+            android:name=".Pantallamapa3"
+            android:label="@string/title_activity_pantallamapa3" />
+        <activity
+            android:name=".Pantallamapa2"
+            android:label="@string/title_activity_pantallamapa2" />
+        <activity
             android:name=".Pantallapruebamapa1"
-            android:label="@string/title_activity_pantallapruebamapa1"></activity>
+            android:label="@string/title_activity_pantallapruebamapa1" />
         <activity
             android:name=".Pantallamapa1"
             android:label="@string/title_activity_pantallamapa1" />
